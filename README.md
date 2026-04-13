@@ -1,49 +1,25 @@
-GitHub Version Control and Code Changes for Hotel Reservation System
-Introduction
+Task Description
 
-This README explains the steps I took to complete the Week 6 activity for the ICT272 Web Design and Development course. The goal was to practice using GitHub for version control, upload a project, make changes to the code, and document the process in a video presentation.
+In this task, I worked with GitHub for version control on a previously created Hotel Reservation System program. I demonstrated how to upload a project, track changes, commit updates, and push the project to GitHub.
 
-Step 1: GitHub Account Setup
-I created a GitHub account at GitHub
- and logged in using my credentials.
-This allowed me to manage my code, collaborate with others, and track project history.
-Step 2: GitHub Desktop Installation
+Steps I Completed
+1. GitHub Account Setup
+I created an account on GitHub
+. GitHub is a web-based platform that provides version control and allows developers to track and manage their code changes over time.
+2. Installing GitHub Desktop
 I downloaded and installed GitHub Desktop from GitHub Desktop
-.
-This software provides a graphical interface to manage repositories and commit changes to code.
-Step 3: Uploading Previous Program
-I uploaded the Hotel Reservation System project from my local machine to GitHub.
-Created a new repository and pushed my files using GitHub Desktop.
-Step 4: Code Changes
-Change 1: Improved Input Validation
+. This application provides an easy-to-use interface for managing my repositories, committing changes, and pushing updates to GitHub without needing to use command-line tools.
+3. Uploading the Previous Program
+I created a new repository on GitHub and uploaded my previous program, the Hotel Reservation System. The system calculates the total cost for a customer's stay based on the number of nights and whether they choose room service.
+4. Making Changes to the Code
 
-Before:
+I made two changes to the code of my hotel reservation system:
 
-NumberOfnight = int.Parse(Console.ReadLine());
-
-After:
-
-int NumberOfnight;
-while (!int.TryParse(Console.ReadLine(), out NumberOfnight))
-{
-    Console.WriteLine("Enter valid number:");
-}
-Explanation:
-I replaced int.Parse with int.TryParse to prevent the program from crashing if the user enters invalid input. It ensures safer input handling.
-Change 2: Improved Exit Condition
-
-Before:
-
-if (choice == "q" || choice == "Q")
-
-After:
-
-if (choice.Trim().ToLower() == "q" || choice.Trim().ToLower() == "exit")
-Explanation:
-I made the exit condition more flexible by allowing multiple variations of the exit command, such as "exit" or "quit", and trimming unnecessary spaces.
-Step 5: GitHub Commit and Push
-After making the changes, I committed them using GitHub Desktop and pushed them to the repository.
-This allows me to keep track of all the modifications I made in my project.
-Step 6: Reflection on the Process
-
-From this activity, I learned how to use GitHub for version control. It helps in managing project versions, tracking changes, and collaborating with others. By using GitHub Desktop, I was able to manage the repository visually, making it easy to commit, push, and track code changes. This is an essential skill for real-world software development, especially when working with teams.
+Change 1: Improved input validation by using TryParse() instead of int.Parse(), which prevents the program from crashing when invalid input is entered.
+Change 2: Updated the exit condition of the program to accept variations of the exit command such as "quit", "exit", or "q".
+5. How Commits Work
+Commits are used to track changes made to a file. Each time I make a change to the code, I can commit it to the repository with a message describing the change.
+This helps me maintain a history of all modifications made to the project, allowing me to revert to previous versions if necessary.
+After making my changes, I committed them with the message: "Improved input validation and exit condition."
+6. Pushing Projects to GitHub
+After committing the changes, I used GitHub Desktop to push my commits to the repository. This updates the online version of the project on GitHub, so the changes are reflected in the cloud, making the project accessible from anywhere.
