@@ -88,7 +88,7 @@ namespace htel
                 Console.WriteLine("________________________________________");
                 Console.WriteLine("Press q to exit Or press any other key to continue:");
                 string choice = Console.ReadLine();
-                if (choice=="q"|| choice == "Q")
+                if (choice.Trim().ToLower() == "q" || choice.Trim().ToLower() == "exit")
                 {
                     break;
                 }
