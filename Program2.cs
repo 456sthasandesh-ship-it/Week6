@@ -36,7 +36,11 @@ namespace htel
                 
                 while (true) { 
                    
-                    NumberOfnight = int.Parse(Console.ReadLine()); 
+                   int NumberOfnight;
+                    while (!int.TryParse(Console.ReadLine(), out NumberOfnight))
+                    {
+                        Console.WriteLine("Enter valid number:");
+                    } 
                     if(NumberOfnight>=1&& NumberOfnight <= 20)
                     {
                         night[i] = NumberOfnight;
